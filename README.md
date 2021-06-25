@@ -17,10 +17,13 @@ Edit your .env file for sending email after candidate submit
 
 ## Preview
 Home Page
+![home-page](https://github.com/yusuf26/simple-cv-sistem/blob/main/home.png?raw=true)
 
 Thank you After Submit
+![home-page](https://github.com/yusuf26/simple-cv-sistem/blob/main/thankyou.png?raw=true)
 
 Admin get email from candidate
+![home-page](https://github.com/yusuf26/simple-cv-sistem/blob/main/email.png?raw=true)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
