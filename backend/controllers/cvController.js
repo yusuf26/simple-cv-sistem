@@ -90,18 +90,22 @@ exports.new = function (req, res) {
                         '</tr>'+
                     '</table>'
     
-    var mailOptions = {
-        from: 'cupjul@gmail.com',
-        to: 'hamdadiyusuf@gmail.com',
-        subject: 'New Candidate Added',
-        html: dataCV
-    };
+
+    if(process.env.GMAIL_USER_NAME !== ''){
+        var mailOptions = {
+            from: 'cupjul@gmail.com',
+            to: 'hamdadiyusuf@gmail.com',
+            subject: 'New Candidate Added',
+            html: dataCV
+        };
+        
+        transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+            console.log(error);
+            } else {
+            console.log('Email sent: ' + info.response);
+            }
+        });
+    }
     
-    transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-        console.log(error);
-        } else {
-        console.log('Email sent: ' + info.response);
-        }
-    });
 };
