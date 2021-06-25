@@ -18,7 +18,7 @@ export default function ThankYou() {
           <div className="col row align-items-center text-center" style={{ height:'100vh', overflow:'auto'}}>
             <h3>
                 Thank you for your submit <br />
-                <small class="text-muted">We will contact you as soon as possible</small>
+                <small className="text-muted">We will contact you as soon as possible</small>
             </h3>
           </div>
         </div>
